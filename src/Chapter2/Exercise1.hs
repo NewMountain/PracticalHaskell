@@ -1,6 +1,6 @@
 {-# LANGUAGE Strict #-}
 
-module Exercise1 where
+module Chapter2.Exercise1 where
 
 {-|
     This is working the Exercises from the lovely book [Practical Haskell](https://www.amazon.com/Practical-Haskell-World-Guide-Programming/dp/1484244796/ref=sr_1_1?dchild=1&keywords=Practical+Haskell&qid=1605563489&sr=8-1).

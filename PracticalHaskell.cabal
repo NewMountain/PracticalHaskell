@@ -4,13 +4,13 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a5bae733999704aba304ef78ccca6755d4b17ec91f7c5ac00aa8e7b246118dcc
+-- hash: a98bd14dc0cbbe9a86714aa13ba3446568d4e68691a0aeac8271fee7b54928c8
 
-name:           chapter2
+name:           PracticalHaskell
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/NewMountain/chapter2#readme>
-homepage:       https://github.com/NewMountain/chapter2#readme
-bug-reports:    https://github.com/NewMountain/chapter2/issues
+description:    Please see the README on GitHub at <https://github.com/NewMountain/PracticalHaskell#readme>
+homepage:       https://github.com/NewMountain/PracticalHaskell#readme
+bug-reports:    https://github.com/NewMountain/PracticalHaskell/issues
 author:         Christoher Nyberg
 maintainer:     christopher.nyberg@gmail.com
 copyright:      MIT
@@ -19,47 +19,47 @@ license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
+    ChangeLog.md
 
 source-repository head
   type: git
-  location: https://github.com/NewMountain/chapter2
+  location: https://github.com/NewMountain/PracticalHaskell
 
 library
   exposed-modules:
-      Exercise1
       Lib
+    , Chapter2.Exercise1
   other-modules:
-      Paths_chapter2
+      Paths_PracticalHaskell
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
   default-language: Haskell2010
 
-executable chapter2-exe
+executable PracticalHaskell-exe
   main-is: Main.hs
   other-modules:
-      Paths_chapter2
+      Paths_PracticalHaskell
   hs-source-dirs:
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
-    , chapter2
+      PracticalHaskell
+    , base >=4.7 && <5
   default-language: Haskell2010
 
-test-suite chapter2-test
+test-suite PracticalHaskell-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_chapter2
-    , Exercise1Spec
+      Paths_PracticalHaskell
   hs-source-dirs:
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
-    , chapter2
+      PracticalHaskell
+    , base >=4.7 && <5
     , hspec
     , hspec-discover
   default-language: Haskell2010

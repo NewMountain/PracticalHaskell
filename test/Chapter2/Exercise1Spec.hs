@@ -1,4 +1,4 @@
-module Exercise1Spec where
+module Chapter2.Exercise1Spec where
 
 {-|
     This is working the Exercises from the lovely book [Practical Haskell](https://www.amazon.com/Practical-Haskell-World-Guide-Programming/dp/1484244796/ref=sr_1_1?dchild=1&keywords=Practical+Haskell&qid=1605563489&sr=8-1).
@@ -6,7 +6,7 @@ module Exercise1Spec where
 -}
 
 import Test.Hspec
-import Exercise1
+import Chapter2.Exercise1
 
 spec :: Spec
 spec = do
